@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Cookie Consent by Insites -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+</head>
+
+<body>
+    <!-- Your website content -->
+
+    <!-- Initialize Cookie Consent -->
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#f1d600"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience on our website.",
+                    "dismiss": "Got it!",
+                    "link": "Learn more",
+                    "href": "privacy.html" // Make sure this links to your privacy policy
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
